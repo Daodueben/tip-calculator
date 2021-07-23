@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <div class="logo logo-bg">
+        <img src="images/logo.svg" alt="">
+    </div>
+    <div class="container">
+        <div class="outer-container">
+            <div class="bill-class">
+                <label for="bill">Bill</label>
+                <input type="text" name="bill" id="bill" class="bill" placeholder="0">
+            </div>
+            
+            <div class="btn-group">
+                <p class="tip-select">Select Tip %</p>
+                <div class="btn-grid">
+                    <!-- consider using flexbox later -->
+                    <button class="btn-select data-tip" value="5">5%</button>
+                    <button class="btn-select data-tip" value="10">10%</button>
+                    <button class="btn-select data-tip" value="15">15%</button>
+                    <button class="btn-select data-tip" value="25">25%</button>
+                    <button class="btn-select data-tip" value="50">50%</button>
+                    <input type="text" name="custom" id="" placeholder="custom" class="custom">
+                </div>
+            </div>
+            
+    
+            <div class="people-class"> <br>
+                <label for="people">Number of People</label>
+                <input type="text" name="people" id="people" class="people" placeholder="0">
+            </div>
+        </div>
+       
+       
+
+        <div class="inner-container">
+            <div class="tip">
+                <div class="t-text">
+                    <p>Tip Amount</p>
+                    <span class="person">/ Person</span>
+                </div>
+                <div class="tip-amount">
+                    <span class="per-person"><b class="dollar">$</b>0.00</span>
+                </div> 
+            </div>
+
+            <div class="total">
+                <div class="t-text">
+                    <p>Total</p>
+                    <span class="person">/ Person</span>
+                </div>
+                <div class="tip-amount">
+                    <span class="per-person total-per-person"><b class="dollar">$</b>0.00</span>
+                </div> 
+            </div>
+            <div class="inner-con-btn">
+                <input type="submit" value="Reset" class="reset-btn">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/index.js"></script>
+</html>
