@@ -83,6 +83,16 @@
   border: none;
 }
 
+.btn-select:hover {
+  background-color: #9fe8df;
+  color: #004f4e;
+}
+
+.active {
+  background-color: #26c2ad;
+  color: #004f4e;
+}
+
 .diff-color {
   background-color: #26c2ad;
   color: #004f4e;
@@ -151,6 +161,7 @@
 
 .btn-disabled {
   background-color: #0d686d;
+  cursor: not-allowed;
 }
 
 /*media query screen styles starts here*/
