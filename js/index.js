@@ -7,6 +7,8 @@ let total_amount;
 let tip_per_person;
 let total_per_person;
 let disable_option;
+let custom;
+// bill = Number(document.querySelector('.bill').value);
 
 disable_option = document.querySelector('.reset-btn');
 disable_option.disabled = true;
@@ -22,6 +24,16 @@ document.querySelector('.bill').onkeyup = () => {
     }
 }
 
+
+document.querySelector('.custom').onkeyup = () => {
+    custom = document.querySelector('.custom').value;
+    bill = Number(document.querySelector('.bill').value);
+    console.log(custom);
+    percent_amount = (bill * custom) / 100;
+    total_amount = bill + percent_amount;
+    console.log(percent_amount);
+    console.log(total_amount);
+}
 
 document.querySelectorAll('button').forEach(button => {
     button.onclick = () =>{
